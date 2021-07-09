@@ -64,6 +64,9 @@ button:hover {
   width: 250px;
 }
 
+.grupo-horizontal {
+  display: flex;
+}
 .grupo-checkbox {
   display: inline-block;
   margin: 10px;

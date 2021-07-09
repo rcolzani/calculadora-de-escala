@@ -41,10 +41,21 @@ function calcularHorarioFinalDaJornada() {
         }
     }
 
-    if (document.getElementById('adicionarIntervalo').checked == true) {
+    if (document.getElementById('adicionarIntervalo').checked) {
+        let intervalo = Number($('#minutos-de-intervalo').val());
         fimJornada.add(intervalo, 'minutes');
     }
 
     document.getElementById('finalDaJornada').value = fimJornada.format('LTS');;
     console.log(fimJornada);
+}
+
+function OnChangeCheckAdicionarIntervalo() {
+
+    if (document.getElementById('adicionarIntervalo').checked) {
+        $('#minutos-de-intervalo').prop('disabled', false);
+    } else {
+        $('#minutos-de-intervalo').prop('disabled', true).val(0);
+
+    }
 }

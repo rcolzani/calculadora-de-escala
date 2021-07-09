@@ -22,8 +22,12 @@
       <input type="time" id="tempoTotal" value="08:48" />
     </div>
     <div class="grupo-checkbox">
-      <label for="adicionarIntervalo">Adicionar intervalo de 1 hora</label>
-      <input type="checkbox" id="adicionarIntervalo" checked />
+      <label for="adicionarIntervalo">Adicionar intervalo</label>
+      <input type="checkbox" id="adicionarIntervalo" onchange="OnChangeCheckAdicionarIntervalo()" checked />
+    </div>
+    <div class="grupo">
+      <label for="adicionarIntervalo">Minutos de intervalo</label>
+      <input type="number" id="minutos-de-intervalo" value="30" />
     </div>
     <button onclick="calcularHorarioFinalDaJornada()">Calcular</button>
 
@@ -41,6 +45,7 @@
       <p>Código fonte no <a href="https://github.com/rcolzani/calculadora-de-escala">GitHub</a></p>
     </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/moment.js"></script>
   <script src="js/moment-with-locales.js"></script>
   <script src="js/site.js"></script>
