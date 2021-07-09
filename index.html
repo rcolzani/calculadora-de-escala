@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="css/site.css" />
+    <title>Calculador de final de jornada de trabalho</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/site.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>Calculador de final de jornada da Raissa!!!</h1>
-    <p>Você informa o horário inicial da jornada, o tempo total e será calculado o horário final da jornada,
-        considerando a redução noturna.
-    </p>
+  <body>
+    <h1>Calculador de final de jornada de trabalho</h1>
+    <p class="subtitulo">Você informa o horário inicial da jornada, o tempo total e será calculado o horário final da jornada, considerando a redução noturna.</p>
     <div class="grupo">
-        <label for="horaInicial">Hora inicial</label>
-        <input type="time" id="horaInicial">
+      <label for="horaInicial">Hora inicial</label>
+      <input type="time" id="horaInicial" />
     </div>
 
     <div class="grupo">
-        <label for="horaInicial">Tempo total da jornada</label>
-        <input type="time" id="tempoTotal" value="08:48">
+      <label for="horaInicial">Tempo total da jornada</label>
+      <input type="time" id="tempoTotal" value="08:48" />
     </div>
     <div class="grupo-checkbox">
-        <label for="adicionarIntervalo">Adicionar intervalo de 1 hora</label>
-        <input type="checkbox" id="adicionarIntervalo" checked>
+      <label for="adicionarIntervalo">Adicionar intervalo de 1 hora</label>
+      <input type="checkbox" id="adicionarIntervalo" checked />
     </div>
     <button onclick="calcularHorarioFinalDaJornada()">Calcular</button>
 
     <div class="grupo">
-        <label for="horaInicial">Resultado</label>
-        <input type="text" id="finalDaJornada" readonly>
+      <label for="horaInicial">Resultado</label>
+      <input type="text" id="finalDaJornada" readonly />
     </div>
-    <div class="copyright"> <span>Desenvolvido com <span style="color: red;">❤</span> 
-        por <a href="https://www.github.com/rcolzani">Ricardo Colzani</a> e <a href="">Raissa Telles</a></span> </div>
-
-
-</body>
-<script src="js/moment.js"></script>
-<script src="js/moment-with-locales.js"></script>
-<script src="js/site.js"></script>
-
+    <div class="copyright">
+      <p>
+        Desenvolvido com <span style="color: red">❤</span> por
+        <a id="link-ricardo" href="https://www.linkedin.com/in/ricardocolzani/">Ricardo Colzani</a>
+        e
+        <a id="link-raissa" href="https://www.linkedin.com/in/raissatelles">Raissa Telles</a>
+      </p>
+      <p>Código fonte no <a href="https://github.com/rcolzani/calculadora-de-escala">GitHub</a></p>
+    </div>
+  </body>
+  <script src="js/moment.js"></script>
+  <script src="js/moment-with-locales.js"></script>
+  <script src="js/site.js"></script>
 </html>
