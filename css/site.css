@@ -20,6 +20,8 @@ body {
 
 h1 {
   margin-top: 50px;
+  text-align: center;
+  padding: 10px;
 }
 .subtitulo {
   max-width: 500px;
