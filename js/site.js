@@ -3,16 +3,11 @@ function calcularHorarioFinalDaJornada() {
     var inicioJornada = moment('2021-07-08');
     let tempoTotalDeJornada = document.getElementById('tempoTotal').value;
 
-    const intervalo = 60;
-
     let horarioInicial = document.getElementById('horaInicial').value;
     let [horaInicial, minutoInicial] = horarioInicial.split(':');
 
     inicioJornada.add(minutoInicial, 'minutes')
     inicioJornada.add(horaInicial, 'hour')
-
-    let diferencaHorario = 0;
-    let horarioFinalDaJornada = 0;
 
     let [horasParaAcrescentar, minutosParaAcrescentar] = tempoTotalDeJornada.split(':');
 
